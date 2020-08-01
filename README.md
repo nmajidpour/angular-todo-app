@@ -1,1 +1,1 @@
-# angular-concepts
+Implementing the fundamental concepts of Angular 
