@@ -1,1 +1,1 @@
-Implementing the fundamental concepts of Angular 
+Implementing sample code for task management application in Angular
