@@ -1,1 +1,1 @@
-Implementing sample code for task management application in Angular
+Developing simple to-do list app using angular
