@@ -23,30 +23,5 @@
     "id": 5,
     "title": "Task five",
     "completed": false
-  },
-  {
-    "id": 6,
-    "title": "Task six",
-    "completed": true
-  },
-  {
-    "id": 7,
-    "title": "Task seven",
-    "completed": true
-  },
-  {
-    "id": 8,
-    "title": "Task eight",
-    "completed": false
-  },
-  {
-    "id": 9,
-    "title": "Task nine",
-    "completed": true
-  },
-  {
-    "id": 10,
-    "title": "Task ten",
-    "completed": false
   }
 ]
