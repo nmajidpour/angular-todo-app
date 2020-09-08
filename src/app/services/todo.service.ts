@@ -3,19 +3,14 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Todo } from "../models/Todo";
 import { Observable } from "rxjs";
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type':  'application/json',
-    Authorization: 'my-auth-token'
-  })
-};
+const headers = { 'content-type': 'application/json'}  
 
 @Injectable({
   providedIn: "root",
 })
 export class TodoService {
-  url: string = "https://jsonplaceholder.typicode.com/todos";
-  limit='?_limit=5';
+  url: string = "http://localhost:3000/todos";
+  limit='?_limit=7';
 
   constructor(private http: HttpClient) {}
 
@@ -24,6 +19,6 @@ export class TodoService {
   }
 
   addTodo(todo:Todo): Observable<Todo> {
-    return this.http.post<Todo>(this.url, todo, httpOptions);
+    return this.http.post<Todo>(this.url, todo, {'headers':headers});
   }
 }
