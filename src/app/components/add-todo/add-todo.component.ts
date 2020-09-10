@@ -15,6 +15,7 @@ export class AddTodoComponent implements OnInit {
   ngOnInit(): void {
   }  
 
+  // adds the todo in the list
   saveTask() {
     const todo = 
     {

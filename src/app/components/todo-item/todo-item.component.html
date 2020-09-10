@@ -1,4 +1,4 @@
 <div class="card-body">
-    <input type="checkbox" [checked]="todo.completed">
+    <input type="checkbox" [checked]="todo.completed" (change)="completeTodo(todo)">
     {{ todo.title }}    
 </div>

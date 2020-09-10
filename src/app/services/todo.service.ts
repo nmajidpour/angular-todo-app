@@ -14,11 +14,18 @@ export class TodoService {
 
   constructor(private http: HttpClient) {}
 
+  // fetches list of todos
   getTodos(): Observable<Todo[]> {
     return this.http.get<Todo[]>(`${this.url}${this.limit}`);
   }
 
+  // adds the todo to the list
   addTodo(todo:Todo): Observable<Todo> {
     return this.http.post<Todo>(this.url, todo, {'headers':headers});
+  }
+
+  // updates the status of todo
+  completeTodo(todo:Todo): Observable<Todo> {
+    return this.http.put<Todo>(this.url + `/${todo.id}`, todo, {'headers':headers});
   }
 }

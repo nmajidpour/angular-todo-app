@@ -16,6 +16,7 @@ export class TodosComponent implements OnInit {
     this.todoService.getTodos().subscribe(todos => (this.todos = todos));
   }
 
+  // adds the todo in the list
   addTodo(todo:Todo)
   {
     this.todoService.addTodo(todo).subscribe(todos => (this.todos.push(todo)));
