@@ -1,5 +1,4 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Todo } from 'src/app/models/Todo';
 
 @Component({
   selector: 'app-add-todo',
@@ -24,5 +23,4 @@ export class AddTodoComponent implements OnInit {
     }
     this.addTodo.emit(todo);
   }
-
 }

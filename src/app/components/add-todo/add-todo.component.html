@@ -1,6 +1,6 @@
 <div class="input-group">
-    <input type="text" name="task" class="form-control" placeholder="Enter task..." [(ngModel)]="task">
+    <input type="text" name="task" class="form-control" placeholder="Enter task here" [(ngModel)]="task">
     <div class="input-group-append">
-      <button class="btn btn-primary" type="button" (click)= "saveTask()">Add</button>
+      <button class="btn btn-primary" type="button" title="Save Task!" (click)= "saveTask()"><i class="fa fa-check"></i></button>
     </div>
 </div>
