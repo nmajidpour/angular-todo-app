@@ -9,7 +9,7 @@ import { TodoService } from 'src/app/services/todo.service';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;  
-  @Output() delTodo : EventEmitter<any> = new EventEmitter();
+  @Output() delTodo : EventEmitter<any> = new EventEmitter(); 
 
   constructor(private todoService: TodoService) {}
 
@@ -28,4 +28,14 @@ export class TodoItemComponent implements OnInit {
   {
     this.delTodo.emit(this.todo);
   }
+
+   // set as completed task styling
+   setCompleted()
+   {
+      let completedStyle = {
+        todo : true,
+        'is-complete' : this.todo.completed
+      }
+      return completedStyle;
+   }
 }
