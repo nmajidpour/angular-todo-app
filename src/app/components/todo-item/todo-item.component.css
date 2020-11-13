@@ -1,3 +1,7 @@
 .is-complete{
     text-decoration: line-through;
 }
+
+.close:hover {
+   color: red;
+}
